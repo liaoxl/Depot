@@ -1,17 +1,17 @@
-# My person notes when learning the book < Agile Web Development with Rails>
+== My person notes when learning the book < Agile Web Development with Rails>
 
-# Problem 1
+* Problem 1
 Page 134:
 	When I finished the revising of line_items_controller.rb
 	I click the "add to cart" button 
 	A error occurred
 	
-## Like this :
+* Like this :
 	ActiveModel::MassAssignmentSecurity::Error in LineItemsController#create
 
 	Can’t mass-assign protected attributes: product
 
-## I found the similar problems on http://forums.pragprog.com/forums/148/topics/10565
+* I found the similar problems on http://forums.pragprog.com/forums/148/topics/10565
 
 and I revise the file following this advice:
 
