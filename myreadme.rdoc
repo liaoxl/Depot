@@ -18,3 +18,15 @@ and I revise the file following this advice:
 "I solved this problem (same rails version) by changing the build call to: build(:product_id => product.id). Same problem in the functional test."
 
 and I get it solved
+
+* Problem 2
+Page 142
+	When I run 'rake db:migrate', Error "Can't mass-assign protected attributes"
+* Solution:
+	Go to /models/line_item.rb and add the following …
+	class LineItem < ActiveRecord::Base
+	belongs_to :product
+	belongs_to :cart
+	attr_accessible :cart_id, :product_id, :quantity
+	end
+
